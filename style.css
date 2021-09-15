@@ -1,0 +1,159 @@
+/* Font Family Preconnect */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
+/* Core Styling */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* Container Styling */
+.container {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background: #f4f4f4 !important;
+    height: 100vh !important;
+    width: 100% !important;
+    transition: all .5s ease-in-out !important;
+}
+
+.container-dark {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    height: 100vh;
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+/* Light & Dark Modes Styling */
+#dark {
+    padding: 3px 10px;
+    font-size: 24px;
+    background: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+
+#dark:hover { font-size: 30px }
+
+#light {
+    padding: 3px 10px;
+    font-size: 24px;
+    background: #111;
+    border: 2px solid #000;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+    color: #fff;
+}
+
+#light:hover { font-size: 30px }
+
+.none { display: none }
+
+/* Clock Container Styling */
+.clock-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    width: 50vw;
+    height: 200px;
+    padding: 30px;
+    margin: 100px 0;
+    border: 2px solid #ccc;
+    transition: all .5s ease-in-out;
+}
+
+.clock-container-dark {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: #fff;
+    border-radius: 10px;
+    width: 50vw;
+    height: 200px;
+    padding: 30px;
+    margin: 100px 0;
+    border: 2px solid #000;
+    transition: all .5s ease-in-out;
+}
+
+/* Headings Styling */
+.number {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #f4f4f4;
+    color: #000;
+    border-radius: 10px;
+    font-size: 100px;
+    font-weight: 500;
+    border: 2px solid #ccc;
+    transition: all .5s ease-in-out;
+}
+
+.number-dark {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 100px;
+    font-weight: 500;
+    border: 2px solid #000;
+    transition: all .5s ease-in-out;
+}
+
+/* Coluns Styling */
+.colun {
+    font-size: 70px;
+    margin: 0 10px;
+    transition: all .5s ease-in-out;
+    color: #000;
+}
+
+/* Mobile --v */
+@media (max-width: 850px) {
+    .clock-container {
+        width: 85vw;
+        height: 135px;
+        padding: 20px;
+    }
+
+    .clock-container-dark {
+        width: 85vw;
+        height: 135px;
+        padding: 20px;
+    }
+
+    .number {
+        font-size: 40px;
+    }
+
+    .number-dark {
+        font-size: 40px;
+    }
+}
